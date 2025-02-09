@@ -28,14 +28,6 @@ function logMessage(message) {
   fs.appendFileSync(LOG_FILE, logEntry, "utf8");
 }
 
-
-
-
-
-
-
-
-
 app.get("/", (req, res) => {
   logMessage("Home page accessed");
   res.send("Welcome to the Node.js Server!");
