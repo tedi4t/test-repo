@@ -23,11 +23,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-
-
-
-
-
 function logMessage(message) {
   const logEntry = `[${new Date().toISOString()}] ${message}\n`;
   fs.appendFileSync(LOG_FILE, logEntry, "utf8");
